@@ -29,7 +29,7 @@
         </div>
         <!-- Sign IN form starts here -->
         <form id="sign-in-form" action="">
-          <div class="form-input-control">
+          <div class="form-row">
             <label for="login-field">Login</label>
             <input
               type="email"
@@ -38,19 +38,22 @@
               required
             />
           </div>
-          <div class="form-input-control">
+          <div class="form-row">
             <label for="password-field">Password</label>
             <input
               type="password"
               id="password-field"
               placeholder="passwords must match"
               minlength="8"
+              maxlength="20" 
               required
             />
           </div>
-          <div class="form-checkbox-control">
-            <input type="checkbox" id="stay-signed-in" />
-            <label for="stay-signed-in">Stay signed in</label>
+          <div class="form-row form-checkbox-control">
+            <div class="chk-box">
+              <input type="checkbox" id="stay-signed-in" />
+              <label for="stay-signed-in">Stay signed in</label>
+            </div>
           </div>
           <hr />
           <div class="form-submit-control">
@@ -67,7 +70,7 @@
         </div>
         <!-- Sign UP form starts here -->
         <form id="sign-up-form" action="">
-          <div class="form-input-control">
+          <div class="form-row">
             <label for="name-field">Your name</label>
             <input
               type="text"
@@ -77,7 +80,7 @@
               required
             />
           </div>
-          <div class="form-input-control">
+          <div class="form-row">
             <label for="email">Email</label>
             <input
               type="email"
@@ -86,7 +89,7 @@
               required
             />
           </div>
-          <div class="form-input-control">
+          <div class="form-row">
             <label for="password">Password</label>
             <input
               type="password"
@@ -97,7 +100,7 @@
               required
             />
           </div>
-          <div class="form-input-control">
+          <div class="form-row">
             <label for="confirm-password">Confirm Password</label>
             <input
               type="password"
@@ -108,7 +111,7 @@
               required
             />
           </div>
-          <div class="form-input-control">
+          <div class="form-row">
             <label for="phone">Phone number</label>
             <input
               type="tel"
@@ -118,7 +121,7 @@
               placeholder="ex.: +12336456355"
             />
           </div>
-          <div class="form-input-control">
+          <div class="form-row">
             <label for="avatar">Avatar</label>
             <input type="file" id="avatar" />
           </div>
@@ -133,8 +136,8 @@
               </select>
             </div>
             <div class="form-input-control">
-              <label for="state">City</label>
-              <select id="state">
+              <label for="city">City</label>
+              <select id="city">
                 <option value="" disabled selected>Select your city</option>
                 <option value="new-york">New York</option>
                 <option value="washington">Washington DC</option>

@@ -11,7 +11,10 @@ body {
 }
 
 .content {
+  display: flex;
+  flex-direction: row;
   padding: 30px;
+  gap: 30px;
 }
 
 h2 {
@@ -29,14 +32,43 @@ form {
   padding: 20px;
 }
 
-.subtext {
-  color: #a9a9a9;
-  font-weight: unset;
+.form-header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 30px;
+}
+.form-header .subtext {
+  font-weight: lighter;
+  color: #b6b6b6;
+}
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 30px;
+}
+
+hr {
+  margin-bottom: 30px;
+}
+
+.form-submit-control {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
 }
 
 #sign-in,
 #sign-up {
-  width: 100%;
+  width: 50%;
+}
+
+#sign-in-form {
+  border: 1px solid;
+  
 }
 
 a {
@@ -60,6 +92,9 @@ input[type="radio"] {
   height: max-content;
   padding: 0;
 }
+.chk-box label {
+  font-weight: normal;
+}
 
 input[type="submit"] {
   width: unset;
@@ -80,6 +115,28 @@ input[type="submit"]:hover {
   background: #294bbb;
 }
 
+.form-group-horizontal-control {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+}
+
+.form-group-horizontal-control .form-input-control {
+  flex: 1;
+  width: auto;
+}
+
+.form-input-control {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 30px;
+}
+
+.form-radio-control label {
+  font-weight: normal;
+}
 .form select {
   height: 30px;
 }
